@@ -8,12 +8,5 @@ export const supabase = createClient(process.env.DATA_API, process.env.SECRET_KE
 
 
 
-export async function addUser() {
-    const { data, error } = await supabase.from('users').insert({ username: "david" }).select()
-    if (error) {
-        console.log(error);
-    }
-    console.log(data);
-    return data
-}
+
 

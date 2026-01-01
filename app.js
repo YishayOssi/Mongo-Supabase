@@ -13,7 +13,7 @@ app.use("/", (req, res, next) => {
 })
 
 
-app.use(supabaseRouter)
+app.use("/", supabaseRouter)
 
 
 
